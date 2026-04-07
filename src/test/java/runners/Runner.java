@@ -1,0 +1,16 @@
+package runners;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+features="src/test/resources/features",
+glue={"steps","base"},
+tags="@RegressionTest or @SmokeTest",
+plugin= {"pretty",
+		"html:target/cucumber-report.html"
+})
+
+public class Runner extends AbstractTestNGCucumberTests{
+
+}

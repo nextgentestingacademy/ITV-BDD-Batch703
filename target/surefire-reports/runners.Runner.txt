@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: runners.Runner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 59.94 s <<< FAILURE! -- in runners.Runner
+runners.Runner.runScenario["", "Unknown"](1) -- Time elapsed: 16.47 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at steps.DistrictStep.I_should_see_the_search_results_for_(DistrictStep.java:47)
+	at ✽.I should see the search results for "Dhurandhar123"(file:///C:/Users/Dell/eclipse-workspace/ITV_B703_BDD/src/test/resources/features/District.feature:14)
+
+runners.Runner.runScenario["", "Unknown"](4) -- Time elapsed: 14.04 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at steps.DistrictStep.I_should_see_the_search_results_for_(DistrictStep.java:47)
+	at ✽.I should see the search results for "Super Duperr123"(file:///C:/Users/Dell/eclipse-workspace/ITV_B703_BDD/src/test/resources/features/District.feature:21)
+
