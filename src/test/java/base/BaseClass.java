@@ -22,7 +22,6 @@ public class BaseClass {
 
 	@Before()
 	public static void setup() {
-
 		String browser = ConfigReader.get("browser");
 //		String browser = System.getProperty("browser","chrome");
 
