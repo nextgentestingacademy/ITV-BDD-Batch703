@@ -44,7 +44,6 @@ public class BaseClass {
 		driver.get(ConfigReader.get("url"));
 		LoggerUtils.info("Launched the application");
 		int time = Integer.parseInt(ConfigReader.get("timeout"));
-
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
 	}
 
